@@ -4,4 +4,4 @@ to run:
 
 java TowersOfFour 4 4 2
 
-last 3 args are defined in spec
+last 3 args are defined in spec and can be changed to different test values
