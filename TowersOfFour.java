@@ -152,10 +152,10 @@ public class TowersOfFour{
 	public void printBoard(int mode){
 		List<Stack<Integer>> towers;
 		if(mode == 0){
-			System.out.println("Ending Board");
+			System.out.println("\nEnding Board: ");
 			towers = this.towers;
 		} else{
-			System.out.println("Starting Board");
+			System.out.println("\nStarting Board: ");
 			towers = this.towersClone;
 		}
 
@@ -182,8 +182,9 @@ public class TowersOfFour{
 	}
 
 	public void printQueue(Queue<String> q){
+		int i = 1;
 		while(q.size() > 0){
-			System.out.println(q.poll() + "\n");
+			System.out.println(i + ". " + q.poll() + "\n");
 		}
 	}
 
@@ -196,7 +197,7 @@ public class TowersOfFour{
 		t.printBoard(1);
 		Queue<String> q = t.solveBoard();
 		t.printBoard(0);
-		System.out.println("Game Moves: ");
+		System.out.println("\nGame Moves: \n");
 		t.printQueue(q);
 
 	}
